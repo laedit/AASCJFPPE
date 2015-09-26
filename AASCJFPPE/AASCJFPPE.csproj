@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9001018-E299-486B-96EF-472E13FF1EF7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AASCJFPPE</RootNamespace>
+    <AssemblyName>AASCJFPPE</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AASCJFPPE.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AASCJFPPE.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Misc\PrintHelper.cs" />
+    <Compile Include="Misc\Variables.cs" />
+    <Compile Include="Misc\VisualState.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\APropos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\APropos.Designer.cs">
+      <DependentUpon>APropos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCCahierJournal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCCahierJournal.Designer.cs">
+      <DependentUpon>UCCahierJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCCahierJournalModification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCCahierJournalModification.Designer.cs">
+      <DependentUpon>UCCahierJournalModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCCahierJournalVisualisation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCCahierJournalVisualisation.Designer.cs">
+      <DependentUpon>UCCahierJournalVisualisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCDidactiqueCJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCDidactiqueCJ.Designer.cs">
+      <DependentUpon>UCDidactiqueCJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCDidactiqueCJModification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCDidactiqueCJModification.Designer.cs">
+      <DependentUpon>UCDidactiqueCJModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCDidactiqueCJVisualisation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCDidactiqueCJVisualisation.Designer.cs">
+      <DependentUpon>UCDidactiqueCJVisualisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCFicheCahierJournal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCFicheCahierJournal.Designer.cs">
+      <DependentUpon>UCFicheCahierJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCSeanceCJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCSeanceCJ.Designer.cs">
+      <DependentUpon>UCSeanceCJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCSeanceCJModification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCSeanceCJModification.Designer.cs">
+      <DependentUpon>UCSeanceCJModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCSeanceCJVisualisation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cahier Journal\UCSeanceCJVisualisation.Designer.cs">
+      <DependentUpon>UCSeanceCJVisualisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCFichePreparatoire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCFichePreparatoire.Designer.cs">
+      <DependentUpon>UCFichePreparatoire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCFichePreparatoireModification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCFichePreparatoireModification.Designer.cs">
+      <DependentUpon>UCFichePreparatoireModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCFichePreparatoireVisualisation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCFichePreparatoireVisualisation.Designer.cs">
+      <DependentUpon>UCFichePreparatoireVisualisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCDidactiqueFP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCDidactiqueFP.Designer.cs">
+      <DependentUpon>UCDidactiqueFP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCDidactiqueFPModification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCDidactiqueFPModification.Designer.cs">
+      <DependentUpon>UCDidactiqueFPModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCDidactiqueFPVisualisation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCDidactiqueFPVisualisation.Designer.cs">
+      <DependentUpon>UCDidactiqueFPVisualisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCFicheFP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCFicheFP.Designer.cs">
+      <DependentUpon>UCFicheFP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCSeanceFP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCSeanceFP.Designer.cs">
+      <DependentUpon>UCSeanceFP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCSeanceFPModification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCSeanceFPModification.Designer.cs">
+      <DependentUpon>UCSeanceFPModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCSeanceFPVisualisation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Fiches preparatoires\UCSeanceFPVisualisation.Designer.cs">
+      <DependentUpon>UCSeanceFPVisualisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Informationcomplementaire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Informationcomplementaire.Designer.cs">
+      <DependentUpon>Informationcomplementaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Liste Eleves\ListeEleves.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Liste Eleves\ListeEleves.Designer.cs">
+      <DependentUpon>ListeEleves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Liste Eleves\UCEleve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Liste Eleves\UCEleve.Designer.cs">
+      <DependentUpon>UCEleve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Liste Eleves\UCEleveList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Liste Eleves\UCEleveList.Designer.cs">
+      <DependentUpon>UCEleveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Parametres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Parametres.Designer.cs">
+      <DependentUpon>Parametres.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\Edit.png" />
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCFichePreparatoire.resx">
+      <DependentUpon>UCFichePreparatoire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCFichePreparatoireModification.resx">
+      <DependentUpon>UCFichePreparatoireModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCFichePreparatoireVisualisation.resx">
+      <DependentUpon>UCFichePreparatoireVisualisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCDidactiqueFP.resx">
+      <DependentUpon>UCDidactiqueFP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCDidactiqueFPModification.resx">
+      <DependentUpon>UCDidactiqueFPModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCDidactiqueFPVisualisation.resx">
+      <DependentUpon>UCDidactiqueFPVisualisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCFicheFP.resx">
+      <DependentUpon>UCFicheFP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCSeanceFP.resx">
+      <DependentUpon>UCSeanceFP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCSeanceFPModification.resx">
+      <DependentUpon>UCSeanceFPModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Fiches preparatoires\UCSeanceFPVisualisation.resx">
+      <DependentUpon>UCSeanceFPVisualisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Informationcomplementaire.resx">
+      <DependentUpon>Informationcomplementaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Liste Eleves\ListeEleves.resx">
+      <DependentUpon>ListeEleves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Liste Eleves\UCEleve.resx">
+      <DependentUpon>UCEleve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Liste Eleves\UCEleveList.resx">
+      <DependentUpon>UCEleveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Parametres.resx">
+      <DependentUpon>Parametres.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add.png" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\APropos.resx">
+      <DependentUpon>APropos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCCahierJournal.resx">
+      <DependentUpon>UCCahierJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCCahierJournalModification.resx">
+      <DependentUpon>UCCahierJournalModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCCahierJournalVisualisation.resx">
+      <DependentUpon>UCCahierJournalVisualisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCDidactiqueCJ.resx">
+      <DependentUpon>UCDidactiqueCJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCDidactiqueCJModification.resx">
+      <DependentUpon>UCDidactiqueCJModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCDidactiqueCJVisualisation.resx">
+      <DependentUpon>UCDidactiqueCJVisualisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCFicheCahierJournal.resx">
+      <DependentUpon>UCFicheCahierJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCSeanceCJ.resx">
+      <DependentUpon>UCSeanceCJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCSeanceCJModification.resx">
+      <DependentUpon>UCSeanceCJModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cahier Journal\UCSeanceCJVisualisation.resx">
+      <DependentUpon>UCSeanceCJVisualisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AASCJFPPE.snk" />
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AASCJFPPE.DAL\AASCJFPPE.DAL.csproj">
+      <Project>{FA38FD5C-8C23-4615-9275-754002557BDE}</Project>
+      <Name>AASCJFPPE.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laedit_logo_squares_original1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

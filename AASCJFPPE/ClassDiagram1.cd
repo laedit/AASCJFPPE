@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AASCJFPPE.MainForm" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AEAAAAAACAABAIUAACACACDAgAAGAEAAAAAEQAAAAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.SettingsForm" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBgAAAgCAAAAAAIASAAAACAAAAABAAAAAAAAIAAAA=</HashCode>
+      <FileName>Forms\SettingsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.Program" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIBAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.Handlers.TbpCahierJournalHandler" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQABACAQCIAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\TbpCahierJournalHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.Properties.Resources" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAEQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.Properties.Settings" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAIAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.UserControls.APropos" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIAAAAgAACAgCAUACACAAEoDAAAAAAAAABAgAghAAAA=</HashCode>
+      <FileName>UserControls\APropos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.UserControls.UCCahierJournal" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARQAAEACgAQQQDIAKABAACsBACgCSJBAgAACiAJgA=</HashCode>
+      <FileName>UserControls\UCCahierJournal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.UserControls.UCCahierJournalModification" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECCQAAAgAACAAAACAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>UserControls\UCCahierJournalModification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.UserControls.UCCahierJournalVisualisation" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>UserControls\UCCahierJournalVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.UserControls.UCDidactiqueCJ" Collapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAAACAAQAAAAACABAACAAACgAAIAAgAAAAAAEA=</HashCode>
+      <FileName>UserControls\UCDidactiqueCJ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.UserControls.UCDidactiqueCJModification" Collapsed="true">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACAAAAAACAGkAAACAAAAAAAAAAwAAgAAAAA=</HashCode>
+      <FileName>UserControls\UCDidactiqueCJModification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AASCJFPPE.UserControls.UCDidactiqueCJVisualisation" Collapsed="true">
+    <Position X="4.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAQAAAACAAAACgBAAAIAABAgAACAAAgA=</HashCode>
+      <FileName>UserControls\UCDidactiqueCJVisualisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

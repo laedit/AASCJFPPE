@@ -1,0 +1,54 @@
+SELECT * FROM Version;
+-- 0.0.2
+SELECT * FROM DomaineActivite;
+INSERT INTO DomaineActivite(Discipline, Intitule) VALUES (2, 'Problèmes');
+INSERT INTO DomaineActivite(Discipline, Intitule) VALUES (1, 'Conjugaison');
+INSERT INTO Version(Numero, Date) VALUES('0.0.2', GETDATE());
+-- 0.0.3
+SELECT * FROM Discipline;
+UPDATE Discipline SET Intitule = 'Mathématiques' WHERE Id = 2;
+INSERT INTO Version(Numero, Date) VALUES('0.0.3', GETDATE());
+-- 0.0.4
+SELECT * FROM DomaineActivite;
+INSERT INTO DomaineActivite(Discipline, Intitule) VALUES (1, 'Musique');
+INSERT INTO Version(Numero, Date) VALUES('0.0.4', GETDATE());
+-- 0.0.5
+SELECT * FROM Discipline;
+UPDATE Discipline SET Intitule = 'Sciences' WHERE Id = 8;
+INSERT INTO Version(Numero, Date) VALUES('0.0.5', GETDATE());
+-- 0.0.6
+SELECT * FROM Discipline;
+INSERT INTO Discipline(Intitule) VALUES ('Arts plastiques');
+INSERT INTO Version(Numero, Date) VALUES('0.0.6', GETDATE());
+-- 0.0.7
+SELECT * FROM Version;
+UPDATE Version SET Description = 'Création de la base de données.' WHERE Numero = '0.0.1';
+UPDATE Version SET Description = 'Ajout des Domaines D''activités "Conjugaison" et "Problèmes" respectivement pour les Disciplines "Français" et "Mathématiques".' WHERE Numero = '0.0.2';
+UPDATE Version SET Description = 'Ajout du ''s'' manquant pour la Discipline "Mathématiques".' WHERE Numero = '0.0.3';
+UPDATE Version SET Description = 'Ajout du Domain d''Activité "Musique" pour la Discipline "Français".' WHERE Numero = '0.0.4';
+UPDATE Version SET Description = 'La Discipline "Sciences Expérimentales et Technologie" devient "Sciences".' WHERE Numero = '0.0.5';
+UPDATE Version SET Description = 'Ajout de la Discipline "Arts plastiques".' WHERE Numero = '0.0.6';
+INSERT INTO Version(Numero, Date, Description) VALUES('0.0.7', GETDATE(), 'Ajout de la colonne [Version].[Description]. Ajout des données de cette colonne.');
+-- 0.0.8
+SELECT * FROM InformationComplementaire;
+ALTER TABLE InformationComplementaire DROP CONSTRAINT PK_InformationComplementaire;
+ALTER TABLE InformationComplementaire DROP Column Id;
+INSERT INTO Version(Numero, Date, Description) VALUES('0.0.8', GETDATE(), 'Suppression de la colonne [InformationComplementaire].[Id].');
+-- 0.0.9
+SELECT * FROM ListeEleve;
+SELECT * FROM Eleve;
+sp_rename 'ListeEleve', 'Eleve';
+ALTER TABLE Eleve ADD COLUMN Informations nvarchar(4000);
+INSERT INTO Version(Numero, Date, Description) VALUES('0.0.9', GETDATE(), 'Changement de nom de [ListeEleve] à [Eleve]. Ajout de la colone [Eleve].[Informations]');
+-- 0.1.0
+SELECT * FROM Version;
+SELECT * FROM Conditions;
+SELECT * FROM DidactiqueFP;
+SELECT * FROM FichePreparatoire;
+INSERT INTO Conditions(Intitule) VALUES ('Introduction / Mise en projet');
+INSERT INTO Conditions(Intitule) VALUES ('Recherche');
+INSERT INTO Conditions(Intitule) VALUES ('Mise en commun');
+INSERT INTO Conditions(Intitule) VALUES ('Structuration');
+INSERT INTO Conditions(Intitule) VALUES ('Différenciation');
+INSERT INTO Conditions(Intitule) VALUES ('Institutionnalisation');
+INSERT INTO Version(Numero, Date, Description) VALUES('0.1.0', GETDATE(), 'Modifications effectuées afin de gérer les fiches préparatoires');
